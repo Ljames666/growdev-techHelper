@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Input-Proccess-Output</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Input-Proccess-Output</h1>
+        <h2>Calculo de Médias</h2>
+      </header>
+      <main>
+        <section id="inputs">
+          <div id="n1">
+            <label for="n1Input">Nota 1:</label>
+            <input type="number" id="n1Input" name="n1" />
+            <button type="button" onclick="leNotas()">Enviar</button>
+          </div>
+          <div id="n2">
+            <label for="n2Input">Nota 2:</label>
+            <input type="number" id="n2Input" name="n2" />
+            <button type="button" onclick="leNotas2()">Enviar</button>
+          </div>
+          <div id="n3">
+            <label for="n3Input">Nota 3:</label>
+            <input type="number" id="n3Input" name="n3" />
+            <button type="button" onclick="leNotas3()">Enviar</button>
+          </div>
+        </section>
+        <section id="calc">
+          <button type="button" id="calcMedia" class="thisResult">Calcular Média</button>
+        </section>
+        <section id="result">
+          <div id="media">
+            <p>Média:</p>
+            <div type="number" id="mediaInput" name="media" class="thisResult" />
+          </div>
+          <div id="status">
+            <p>Status:</p>
+            <div type="text" id="statusInput" name="status" class="thisResult" />
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer><button type="button" id="btn">Recomeçar</button></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
